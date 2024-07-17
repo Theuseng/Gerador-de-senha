@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Seguras</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌙</button>
+    </div>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Digite uma palavra">
+            <button id="generateFromInput">Gerar Senha da Palavra</button>
+        </div>
+        <div class="customize-container">
+            <h2>Personalizar Senha</h2>
+            <div class="password-options">
+                <label>
+                    <input type="checkbox" id="maiusculas"> Incluir Letras Maiúsculas
+                </label>
+                <label>
+                    <input type="checkbox" id="minusculas"> Incluir Letras Minúsculas
+                </label>
+                <label>
+                    <input type="checkbox" id="numeros"> Incluir Números
+                </label>
+                <label>
+                    <input type="checkbox" id="simbolos"> Incluir Símbolos
+                </label>
+                <label>
+                    <input type="checkbox" id="facilLer"> Fácil de Ler
+                </label>
+                <label>
+                    Comprimento da Senha: <span id="lengthValue">12</span>
+                </label>
+                <input type="range" id="lengthSlider" min="8" max="20" value="12">
+            </div>
+            <button id="generateRandom">Gerar Senha Aleatória</button>
+        </div>
+        <div class="output-container">
+            <h2>Sua Senha Segura:</h2>
+            <p id="passwordOutput"></p>
+            <button id="retry">🔄</button>
+            <button id="copyPassword">📋 Copiar</button>
+            <div class="progress-bar" id="strengthBar"></div>
+        </div>
+    </div>
+    <footer>
+        Todos direitos reservados a Theus 2024
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
