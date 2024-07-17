@@ -1,5 +1,12 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -12,7 +19,6 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow-x: hidden;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -20,7 +26,7 @@ body {
     text-align: center;
     max-width: 600px;
     width: 100%;
-    padding: 0 20px; 
+    padding: 0 20px; /* Adicionando padding para evitar quebra no layout */
 }
 
 .input-container, .customize-container, .output-container {
@@ -33,7 +39,7 @@ body {
 }
 
 .input-container input {
-    width: calc(100% - 22px);
+    width: 100%; /* Ajustado para 100% */
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
